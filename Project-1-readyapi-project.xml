@@ -1,0 +1,2060 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="2fbfc846-7cf6-421c-afa7-0a8606e25e3c" created="3.8.1" activeEnvironment="Default" name="Project 1" resourceRoot="" updated="3.9.0 2021-06-22T19:06:14Z" encryptionMode="Not encrypted" abortOnError="false" runType="SEQUENTIAL" soapui-version="5.6.0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.ProTestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Settings File Password" value=""/>
+  <con:entry key="Report Format(s)" value="XML"/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Export JUnit Results" value="true"/>
+  <con:entry key="Export All" value="true"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Slack Channel(s)" value=""/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Test Suite Tags" value=""/>
+  <con:entry key="Select Report Type" value="JUnit-Style report for automation"/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Test Suite" value="Test Suite 1"/>
+  <con:entry key="Run in-process" value="false"/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="Print Report" value="true"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Test Case Tags" value=""/>
+  <con:entry key="Export JUnit Results with test properties" value="false"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Test Case" value="Test Case 1"/>
+  <con:entry key="Slack Access Token" value=""/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="TestRunner Path" value="C:\Program Files\SmartBear\ReadyAPI-3.8.1\bin"/>
+  <con:entry key="Environment" value="Test"/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="Root Folder" value="${WORKSPACE}"/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Save Project" value="false"/>
+</xml-fragment>]]></con:setting>
+  <con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Export JUnit Results" value="false"/>
+  <con:entry key="Export All" value="false"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="TestSuite" value="&lt;all>"/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Select Report Type" value=""/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="Print Report" value="false"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Export JUnit Results with test properties" value="false"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="TestCase" value="&lt;all>"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="TestRunner Path" value=""/>
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="Root Folder" value=""/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Save Project" value="false"/>
+</xml-fragment>]]></con:setting></con:settings>
+  <con:interface xsi:type="con:WsdlInterface" id="78940a34-e6cf-4800-9afc-c32224ab1ce5" wsaVersion="NONE" name="CalculatorSoap" type="wsdl" bindingName="{http://tempuri.org/}CalculatorSoap" soapVersion="1_1" anonymous="optional" definition="http://www.dneonline.com/calculator.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart="http://www.dneonline.com/calculator.asmx?WSDL">
+      <con:part>
+        <con:url>http://www.dneonline.com/calculator.asmx?WSDL</con:url>
+        <con:content><![CDATA[<wsdl:definitions targetNamespace="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Add">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="intA" type="s:int"/>
+            <s:element minOccurs="1" maxOccurs="1" name="intB" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddResult" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Subtract">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="intA" type="s:int"/>
+            <s:element minOccurs="1" maxOccurs="1" name="intB" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SubtractResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SubtractResult" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Multiply">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="intA" type="s:int"/>
+            <s:element minOccurs="1" maxOccurs="1" name="intB" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MultiplyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="MultiplyResult" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Divide">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="intA" type="s:int"/>
+            <s:element minOccurs="1" maxOccurs="1" name="intB" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DivideResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DivideResult" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="AddSoapIn">
+    <wsdl:part name="parameters" element="tns:Add"/>
+  </wsdl:message>
+  <wsdl:message name="AddSoapOut">
+    <wsdl:part name="parameters" element="tns:AddResponse"/>
+  </wsdl:message>
+  <wsdl:message name="SubtractSoapIn">
+    <wsdl:part name="parameters" element="tns:Subtract"/>
+  </wsdl:message>
+  <wsdl:message name="SubtractSoapOut">
+    <wsdl:part name="parameters" element="tns:SubtractResponse"/>
+  </wsdl:message>
+  <wsdl:message name="MultiplySoapIn">
+    <wsdl:part name="parameters" element="tns:Multiply"/>
+  </wsdl:message>
+  <wsdl:message name="MultiplySoapOut">
+    <wsdl:part name="parameters" element="tns:MultiplyResponse"/>
+  </wsdl:message>
+  <wsdl:message name="DivideSoapIn">
+    <wsdl:part name="parameters" element="tns:Divide"/>
+  </wsdl:message>
+  <wsdl:message name="DivideSoapOut">
+    <wsdl:part name="parameters" element="tns:DivideResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="CalculatorSoap">
+    <wsdl:operation name="Add">
+      <wsdl:documentation>Adds two integers. This is a test WebService. ©DNE Online</wsdl:documentation>
+      <wsdl:input message="tns:AddSoapIn"/>
+      <wsdl:output message="tns:AddSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="Subtract">
+      <wsdl:input message="tns:SubtractSoapIn"/>
+      <wsdl:output message="tns:SubtractSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="Multiply">
+      <wsdl:input message="tns:MultiplySoapIn"/>
+      <wsdl:output message="tns:MultiplySoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="Divide">
+      <wsdl:input message="tns:DivideSoapIn"/>
+      <wsdl:output message="tns:DivideSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CalculatorSoap" type="tns:CalculatorSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="Add">
+      <soap:operation soapAction="http://tempuri.org/Add" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Subtract">
+      <soap:operation soapAction="http://tempuri.org/Subtract" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Multiply">
+      <soap:operation soapAction="http://tempuri.org/Multiply" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Divide">
+      <soap:operation soapAction="http://tempuri.org/Divide" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CalculatorSoap12" type="tns:CalculatorSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="Add">
+      <soap12:operation soapAction="http://tempuri.org/Add" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Subtract">
+      <soap12:operation soapAction="http://tempuri.org/Subtract" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Multiply">
+      <soap12:operation soapAction="http://tempuri.org/Multiply" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Divide">
+      <soap12:operation soapAction="http://tempuri.org/Divide" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Calculator">
+    <wsdl:port name="CalculatorSoap" binding="tns:CalculatorSoap">
+      <soap:address location="http://www.dneonline.com/calculator.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="CalculatorSoap12" binding="tns:CalculatorSoap12">
+      <soap12:address location="http://www.dneonline.com/calculator.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content>
+        <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
+      </con:part>
+    </con:definitionCache>
+    <con:endpoints>
+      <con:endpoint>http://www.dneonline.com/calculator.asmx</con:endpoint>
+    </con:endpoints>
+    <con:environmentSpec>
+      <con:entry environmentId="771c59b9-fbfd-4070-8a11-6a34fab70340">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+    <con:operation id="342715df-8e27-4af6-a591-68288f71990f" isOneWay="false" action="http://tempuri.org/Add" name="Add" bindingOperationName="Add" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false">
+      <con:settings/>
+      <con:environmentSpec>
+        <con:entry environmentId="771c59b9-fbfd-4070-8a11-6a34fab70340">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:operation>
+    <con:operation id="1e3eed98-069b-4178-bf46-6ff86e1268e5" isOneWay="false" action="http://tempuri.org/Divide" name="Divide" bindingOperationName="Divide" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false">
+      <con:settings/>
+      <con:environmentSpec>
+        <con:entry environmentId="771c59b9-fbfd-4070-8a11-6a34fab70340">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:operation>
+    <con:operation id="16cb3eac-a403-443e-b83f-494f042ecc37" isOneWay="false" action="http://tempuri.org/Multiply" name="Multiply" bindingOperationName="Multiply" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false">
+      <con:settings/>
+      <con:environmentSpec>
+        <con:entry environmentId="771c59b9-fbfd-4070-8a11-6a34fab70340">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:operation>
+    <con:operation id="01d560a9-6083-47d2-99e9-120b88e227d8" isOneWay="false" action="http://tempuri.org/Subtract" name="Subtract" bindingOperationName="Subtract" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false">
+      <con:settings/>
+      <con:environmentSpec>
+        <con:entry environmentId="771c59b9-fbfd-4070-8a11-6a34fab70340">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:operation>
+  </con:interface>
+  <con:testSuite id="d114a360-ba1b-44ad-8753-fa23d2fddf90" name="Test Suite 1">
+    <con:settings/>
+    <con:savedRecentRuns>1</con:savedRecentRuns>
+    <con:runType>PARALLELL</con:runType>
+    <con:testCase id="ae44e964-0479-4433-8298-0eb0de7a349f" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TST50-ANE00-AZ0001" searchProperties="true" timeout="0" maxResults="0">
+      <con:description>=====TCName======  
+TST50-ANE00-AZ0001
+=====Beschreibung======  
+Beschreibung0001
+afasfdasfsafsadfsdafsadf
+sdfasrwerqwerqwerwqerw
+agrtarfgafaerereargteartaewr
+=====fachlische Content======  
+BGD
+=====technische Content======  
+dataSource 0001
+=====Kommentar======  
+kom_1</con:description>
+      <con:settings/>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      <con:testStep type="datasource" name="Data Source Add_Zahl2" id="4a067ed6-1db4-4269-b5c2-4fa275219bd3">
+        <con:settings/>
+        <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:dataSource type="Grid">
+            <con:configuration>
+              <check><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry></xml-fragment>]]></check>
+              <row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">2&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row>
+              <row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">4&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row>
+              <row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">6&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row>
+              <row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">4&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row>
+              <row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">5&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row>
+              <row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">6&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row>
+              <row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">7&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row>
+              <row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">8&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row>
+              <row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">9&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row>
+              <recognizeAsPlainText>true</recognizeAsPlainText>
+            </con:configuration>
+          </con:dataSource>
+          <con:shared>true</con:shared>
+          <con:restartShared>true</con:restartShared>
+          <con:property>Zahl2</con:property>
+          <con:completeLastOperation>true</con:completeLastOperation>
+          <con:restartOnRun>true</con:restartOnRun>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasource" name="Data Source Add_Zahl1" id="efb4511f-6803-42ec-844d-f5eb1c73ef8e">
+        <con:settings/>
+        <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:dataSource type="Grid">
+            <con:configuration>
+              <check><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry></xml-fragment>]]></check>
+              <row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">1&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row>
+              <row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">2&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row>
+              <row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">3&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row>
+              <row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">4&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row>
+              <row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">5&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row>
+              <row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">6&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row>
+              <row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">7&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row>
+              <row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">8&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row>
+              <row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">9&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row>
+              <recognizeAsPlainText>true</recognizeAsPlainText>
+            </con:configuration>
+          </con:dataSource>
+          <con:shared>true</con:shared>
+          <con:restartShared>true</con:restartShared>
+          <con:property>Zahl1</con:property>
+          <con:restartOnRun>true</con:restartOnRun>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="request" id="9a3b7a74-4430-4662-896c-c9c2836f2b4b" name="Add">
+        <con:settings/>
+        <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:interface>CalculatorSoap</con:interface>
+          <con:operation>Add</con:operation>
+          <con:request name="Add" id="821768a8-596b-4891-a752-b553252c5029">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>http://www.dneonline.com/calculator.asmx</con:endpoint>
+            <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:Add>
+         <tem:intA>${Data Source Add_Zahl1#Zahl1}</tem:intA>
+         <tem:intB>${Data Source Add_Zahl2#Zahl2}</tem:intB>
+      </tem:Add>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+            <con:assertion type="Valid HTTP Status Codes" id="8299c488-b803-4f69-9d2a-56096088caec" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="7990b056-9980-4641-8203-e11dd56e9ad4" name="Response SLA">
+              <con:configuration>
+                <SLA>1900</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="SOAP Fault Assertion" id="02fd22fa-fb58-40b2-8c39-99f2387662e7" name="Not SOAP Fault"/>
+            <con:assertion type="Schema Compliance" id="baa7909b-af4e-4680-802e-45444d721883" name="Schema Compliance">
+              <con:configuration/>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/><con:wsaConfig action="http://tempuri.org/Add" mustUnderstand="NONE" version="200508"/>
+            <con:wsrmConfig version="1.2"/>
+            <con:environmentSpec>
+              <con:entry environmentId="771c59b9-fbfd-4070-8a11-6a34fab70340">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+            </con:environmentSpec>
+          </con:request>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasink" name="Data Sink" id="5fc1c784-8aab-49f9-b6b2-e6b209c695de" disabled="true">
+        <con:settings/>
+        <con:config xsi:type="con:DataSinkStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:dataSink type="Excel">
+            <con:configuration>
+              <file/>
+              <outfile>C:/ReadyAPI/Mappe_data.xlsx</outfile>
+              <worksheet>Tabelle1</worksheet>
+              <cell>A2</cell>
+              <evaluateFormulas>false</evaluateFormulas>
+              <append>false</append>
+            </con:configuration>
+          </con:dataSink>
+          <con:properties>
+            <con:property>
+              <con:name>Status Code</con:name>
+              <con:value>${Add#HarResponse#$['status']}</con:value>
+            </con:property>
+            <con:property>
+              <con:name>RequestA</con:name>
+              <con:value>${Add#RawRequest#declare namespace tem='http://tempuri.org/'; //tem:Add[1]/tem:intA[1]}</con:value>
+            </con:property>
+            <con:property>
+              <con:name>RequestB</con:name>
+              <con:value>${Add#RawRequest#declare namespace tem='http://tempuri.org/'; //tem:Add[1]/tem:intB[1]}</con:value>
+            </con:property>
+            <con:property>
+              <con:name>Resoult</con:name>
+              <con:value>${Add#Response#declare namespace ns1='http://tempuri.org/'; //ns1:AddResponse[1]/ns1:AddResult[1]}</con:value>
+            </con:property>
+          </con:properties>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="request" id="be102f51-3eca-4dac-a9fd-f861d40a109e" name="Multiply">
+        <con:settings/>
+        <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:interface>CalculatorSoap</con:interface>
+          <con:operation>Multiply</con:operation>
+          <con:request name="Multiply" id="660eb932-2dfd-4b4f-86fd-919829fc5921">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>http://www.dneonline.com/calculator.asmx</con:endpoint>
+            <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:Multiply>
+         <tem:intA>${Add#Request# //*:intA}</tem:intA>
+         <tem:intB>${Add#Response# //*:AddResult}</tem:intB>
+      </tem:Multiply>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+            <con:assertion type="Valid HTTP Status Codes" id="4a10753b-cb32-4d43-a005-eafedb19ee9a" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="12de6611-2692-497a-b04e-a6efc447cc75" name="Response SLA">
+              <con:configuration>
+                <SLA>1200</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="SOAP Fault Assertion" id="1bcb58f7-67f6-4cf5-8202-05a35539fd2f" name="Not SOAP Fault"/>
+            <con:assertion type="Schema Compliance" id="9551080c-8888-4a46-8607-48fca50691d6" name="Schema Compliance">
+              <con:configuration/>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/><con:wsaConfig action="http://tempuri.org/Multiply" mustUnderstand="NONE" version="200508"/>
+            <con:wsrmConfig version="1.2"/>
+          </con:request>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasourceloop" name="Data Source Loop Zahl1" id="6a93a749-e2fc-4899-9d04-977c9f0bdcfb">
+        <con:settings/>
+        <con:config>
+          <dataSourceStep>Data Source Add_Zahl1</dataSourceStep>
+          <targetStep>Add</targetStep>
+          <discardResults>false</discardResults>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasourceloop" name="Data Source Loop Zahl2" id="f91ae5f2-c182-4d85-840d-5dcb050dd6b7">
+        <con:settings/>
+        <con:config>
+          <dataSourceStep>Data Source Add_Zahl2</dataSourceStep>
+          <targetStep>Data Source Add_Zahl1</targetStep>
+          <discardResults>true</discardResults>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="Groovy Script" id="c41c1d5b-debc-4617-aa2e-012059dac1e5" disabled="true">
+        <con:settings/>
+        <con:config>
+          <script>def response = context.expand( '${Add#Response#declare namespace ns1=\'http://tempuri.org/\'; //ns1:AddResponse[1]}' )
+def request = context.expand( '${Add#Request#declare namespace tem=\'http://tempuri.org/\'; //tem:Add[1]/tem:intA[1]}' )</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="request" name="Add2" id="c5926886-b5b6-45a4-80ec-78574d58e766"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CalculatorSoap</con:interface><con:operation>Add</con:operation><con:request name="Add2" id="bf1a9ab0-de0c-4c1f-9412-500ad5ef86c4"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.dneonline.com/calculator.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:Add>\r
+         <tem:intA>?</tem:intA>\r
+         <tem:intB>?</tem:intB>\r
+      </tem:Add>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="34fb6cb6-5f01-4a57-b7e3-f89723e7deae"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="Add3" id="e3f445a6-f94c-41ec-a116-cef75f77ecbb"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CalculatorSoap</con:interface><con:operation>Add</con:operation><con:request name="Add3" id="bf1a9ab0-de0c-4c1f-9412-500ad5ef86c4"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.dneonline.com/calculator.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:Add>\r
+         <tem:intA>?</tem:intA>\r
+         <tem:intB>?</tem:intB>\r
+      </tem:Add>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="34fb6cb6-5f01-4a57-b7e3-f89723e7deae"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="groovy" name="GroovyScript" id="56338537-2ceb-4e52-8e08-ace782031ccc"><con:settings/><con:config><script>def projectName= testRunner.testCase.testSuite.project.getName()   
+
+def testcaseName = testRunner.getTestCase().getName()   
+
+/*File myTestFile = new File("C:/temp/" + projectName + ".txt")
+
+myTestFile.withWriterAppend{ out ->
+
+            out.println("TestCase: " + testcaseName)
+                testRunner.testCase.getTestStepList().each(){
+                    out.println("TestStep: " + it.getName())
+
+    }
+}*/
+File myTestFile = new File("D:/temp/" + testcaseName + ".txt")
+myTestFile.withWriterAppend{out ->
+//out.println("TestCase: " + testcaseName)
+                testRunner.testCase.getTestStepList().each(){
+                    out.println("TestStep: " + it.getName())
+
+    }
+
+/*for ( testSuite in testRunner.testCase.testSuite.project.getTestSuiteList() ) {
+    for ( testCase in testRunner.testCase.testSuite.getTestCaseList() ) {
+        for ( testStep in testCase.getTestStepList() ) {
+            log.info "${testSuite.getName()} : ${testCase.getName()} : ${testStep.getName()} is a test step of type: ${testStep.getClass().toString().tokenize('.')[-1]}"
+        }
+    }
+}*/</script></con:config></con:testStep><con:properties><con:property><con:name>a</con:name><con:value>10</con:value></con:property><con:property><con:name>b</con:name><con:value>20</con:value></con:property></con:properties>
+      <con:reportParameters/>
+      <con:breakPoints>
+        <con:testStepId>9a3b7a74-4430-4662-896c-c9c2836f2b4b</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>efb4511f-6803-42ec-844d-f5eb1c73ef8e</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>6a93a749-e2fc-4899-9d04-977c9f0bdcfb</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>5fc1c784-8aab-49f9-b6b2-e6b209c695de</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>be102f51-3eca-4dac-a9fd-f861d40a109e</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>4a067ed6-1db4-4269-b5c2-4fa275219bd3</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>f91ae5f2-c182-4d85-840d-5dcb050dd6b7</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>c41c1d5b-debc-4617-aa2e-012059dac1e5</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:environmentSpec>
+        <con:entry environmentId="771c59b9-fbfd-4070-8a11-6a34fab70340">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:testCase>
+    <con:testCase id="4132bb5f-82f7-49af-81b0-76774a23f7c2" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TST50-ANE00-AZ0002" searchProperties="true" timeout="0" maxResults="0">
+      <con:description>=====TCName======  
+TST50-ANE00-AZ0002
+=====Beschreibung======  
+Beschreibung0002
+=====fachlische Content======  
+NBG
+=====technische Content======  
+dataSource 0002
+=====Kommentar======  
+kom_2</con:description>
+      <con:settings/>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      <con:testStep type="groovy" name="Hallo" id="508b4995-5f5c-4766-b93c-c77f0b65c49f" disabled="true">
+        <con:description>SOAP Request description</con:description>
+        <con:settings/>
+        <con:config>
+          <script>class Hallo{
+	def log;
+	def context;
+	def testRunner;
+	
+	def Hallo(log, context, testRunner){
+		this.log = log;
+		this.context = context;
+		this.testRunner = testRunner;
+	}
+	def sayHallo(){
+		log.info "Hallo Saeed"
+	}
+	
+}
+context.setProperty("Hallo", new Hallo(log,context,testRunner))</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="request" id="0b6e606f-641a-4696-b2b1-31f35989a542" name="Add">
+        <con:settings/>
+        <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:interface>CalculatorSoap</con:interface>
+          <con:operation>Add</con:operation>
+          <con:request name="Add" id="a4abebab-8766-43bf-83cf-02a738afc67d">
+            <con:description>SOAP Request description</con:description>
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>http://www.dneonline.com/calculator.asmx</con:endpoint>
+            <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:Add>
+         <tem:intA>${#TestCase#A}</tem:intA>
+         <tem:intB>${#TestCase#B}</tem:intB>
+      </tem:Add>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+            <con:assertion type="Valid HTTP Status Codes" id="dbd0dc30-5a68-4593-a70c-659fd0864bfd" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="9e794212-4615-499c-8f21-753bef48237f" name="Response SLA">
+              <con:configuration>
+                <SLA>2000</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="SOAP Fault Assertion" id="e4bc560a-3b77-46b8-affa-56e873bf4fed" name="Not SOAP Fault"/>
+            <con:assertion type="Schema Compliance" id="adae118f-1f83-4d5d-aca5-28965272e288" name="Schema Compliance">
+              <con:configuration/>
+            </con:assertion>
+            <con:assertion type="GroovyScriptAssertion" id="3c2f808a-e158-4a7a-a0c1-b51a3d084fec" name="Script Assertion">
+              <con:configuration>
+                <scriptText>def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+def requestHolder = groovyUtils.getXmlHolder(messageExchange.requestContent)
+def responseHolder = groovyUtils.getXmlHolder(messageExchange.responseContent)
+
+assert responseHolder.getNodeValue("//ns1:AddResponse[1]/ns1:AddResult[1]")== "30"</scriptText>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:wsaConfig action="http://tempuri.org/Add" mustUnderstand="NONE" version="200508"/>
+            <con:wsrmConfig version="1.2"/>
+          </con:request>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="TestGroovyScript" id="ef406048-8646-43ac-aa5e-52931e75b5f5">
+        <con:settings/>
+        <con:config>
+          <script>testRunner.getTestCase().getTestStepByName("Add")</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="XMLParsing" id="38879c54-6e6a-473e-be21-711dc63d89da">
+        <con:settings/>
+        <con:config>
+          <script>// Access XML request through Groovy
+//XML Parsing
+// Populate required nodes in XML request
+com.eviware.soapui.support.GroovyUtils groovyUtils = new  com.eviware.soapui.support.GroovyUtils(context)
+com.eviware.soapui.
+
+def xmlReq = testRunner.testCase.getTestStepByName("Add").getPropertyValue("Request")
+//def a = testRunner.testCase.getPropertyValue("A")
+log.info xmlReq
+//def b = testRunner.testCase.getPropertyValue("B")
+//log.info b
+def samplexmlreq = groovyUtils.getXmlHolder(xmlReq)
+log.info samplexmlreq
+samplexmlreq.setNodeValue("//*:intA",200)
+samplexmlreq.setNodeValue("//*:intB", 300)
+
+def FinalXML = samplexmlreq.getXml()
+
+com.eviware.soapui.support.StringUtils.i
+//context.getCurrentStep().getLabel()</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="properties" name="Properties" id="ae84496d-2485-41da-a883-4a0b584e7727">
+        <con:description>SOAP Request description</con:description>
+        <con:settings/>
+        <con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:properties/>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="Groovy Script" id="d03a2c2f-1655-475a-b0dc-bf9bbedfe0f9">
+        <con:description>SOAP Request description</con:description>
+        <con:settings/>
+        <con:config>
+          <script>def prj = testRunner.testCase.testSuite.project.workspace.getProjectByName("Project 1")
+log.info prj
+def testSu = prj.getTestSuiteByName("Test Suite 2").getPropertyValue('a')
+log.info testSu
+def tc = prj.getTestSuiteByName("Test Suite 2").getTestCaseByName("TestCase1").getPropertyValue('a')
+log.info tc
+
+//.getPropertyValue('a')
+
+log.info context.expand('${#TestCase#A}')
+
+log.info com.eviware.soapui.SoapUI.globalProperties.getPropertyValue('a')
+
+log.info testRunner.testCase.testSuite.project.getPropertyValue('a')
+
+log.info testRunner.testCase.testSuite.getPropertyValue('a')</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="properties" name="Properties 2" id="98300e05-96bc-4afb-97e4-ea63426fa4e8">
+        <con:description>SOAP Request description</con:description>
+        <con:settings/>
+        <con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:properties/>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="Groovy Script_Update_TCDe" id="83ce49b7-964d-4abb-97fc-b9738515c291">
+        <con:description>SOAP Request description</con:description>
+        <con:settings/>
+        <con:config>
+          <script>def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+def requestHolder = groovyUtils.getXmlHolder(messageExchange.requestContent)
+def responseHolder = groovyUtils.getXmlHolder(messageExchange.responseContent)
+log.info testRunner.testCase.description
+assert responsHolder.getNodeValue("//ns1:AddResponse[1]/ns1:AddResult[1]")== "30"</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="Groovy Script 2" id="7f14c195-e37d-454f-b367-b441cca02961">
+        <con:settings/>
+        <con:config>
+          <script>import Callee
+// Call the class from the library and post the returned information to the log.
+c = new Callee()
+log.info c.hello()</script>
+        </con:config>
+      </con:testStep>
+      <con:properties>
+        <con:property>
+          <con:name>A</con:name>
+          <con:value>10</con:value>
+        </con:property>
+        <con:property>
+          <con:name>B</con:name>
+          <con:value>20</con:value>
+        </con:property>
+      </con:properties>
+      <con:reportParameters/>
+      <con:breakPoints>
+        <con:testStepId>38879c54-6e6a-473e-be21-711dc63d89da</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>ef406048-8646-43ac-aa5e-52931e75b5f5</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:environmentSpec>
+        <con:entry environmentId="771c59b9-fbfd-4070-8a11-6a34fab70340">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:testCase>
+    <con:testCase id="895e3f88-0e72-4d33-98e1-2fef50622611" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TST50-ANE00-AZ0003" searchProperties="true" timeout="0" maxResults="0">
+      <con:description>=====TCName======  
+TST50-ANE00-AZ0003
+=====Beschreibung======  
+Beschreibung0003
+=====fachlische Content======  
+fa003
+=====technische Content======  
+dataSource 0003
+=====Kommentar======  
+kom_3</con:description><con:settings/>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      <con:testStep type="request" id="c6087f7f-aec4-4cf0-997b-8ebc0c59701e" name="Multiply">
+        <con:settings/>
+        <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:interface>CalculatorSoap</con:interface>
+          <con:operation>Multiply</con:operation>
+          <con:request name="Multiply" id="386cdd62-b919-400e-9f8a-3000ed26baab">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>http://www.dneonline.com/calculator.asmx</con:endpoint>
+            <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:Multiply>
+         <tem:intA>12</tem:intA>
+         <tem:intB>12</tem:intB>
+      </tem:Multiply>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+            <con:assertion type="Valid HTTP Status Codes" id="36d575cc-5bf9-4dc2-8d52-601b28dce96f" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="0b312299-15d7-4b34-90b0-4387a0b8ca43" name="Response SLA">
+              <con:configuration>
+                <SLA>600</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Schema Compliance" id="38c29551-a231-4c58-9c66-f711e665c15b" name="Schema Compliance">
+              <con:configuration/>
+            </con:assertion>
+            <con:assertion type="XPath Match" id="569f611e-37c1-449a-b5cc-bceedceb4276" name="XPath Match">
+              <con:configuration>
+                <path>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
+declare namespace ns1='http://tempuri.org/';
+//*:Body</path>
+                <content><![CDATA[<soap:Body xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <MultiplyResponse xmlns="http://tempuri.org/">
+    <MultiplyResult>*</MultiplyResult>
+  </MultiplyResponse>
+</soap:Body>]]></content>
+                <allowWildcards>true</allowWildcards>
+                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+                <ignoreComments>false</ignoreComments>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/><con:wsaConfig action="http://tempuri.org/Multiply" mustUnderstand="NONE" version="200508"/>
+            <con:wsrmConfig version="1.2"/>
+            <con:environmentSpec>
+              <con:entry environmentId="771c59b9-fbfd-4070-8a11-6a34fab70340">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+            </con:environmentSpec>
+          </con:request>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="Groovy ScriptMultiply" id="b29b8a58-ad0d-46d0-be8d-da570a50d203">
+        <con:settings/>
+        <con:config><script>/* XML Parsing.
+ *  In this script will be tried to get the XML request of the API manipulate it and send the request
+ *  Step1. Import the Pacage "com.eviware.soapui.support.GroovyUtils(context)" which contain the class GroovyUtils. The method getXmlHolder is a method of class GroovyUtils.
+ *  Step2. Create an Object in GroovyUtil calss to use the getXmlHolder method for getting the entier xml request message from API.
+ *  Step3. Define a variable and assigen the API request to the Variable
+ *  Step4. Methode XmlHolder aufrufen und gesammte Request message an holderReq variable zuweisen
+ */
+
+
+
+//Step1
+import com.eviware.soapui.impl.wsdl.testcase.WsdlTestRunContext
+
+//Step2. My Objekt bilden, um auf die Method getXmlHolder zu zugreiffen
+def myObject = new com.eviware.soapui.support.GroovyUtils(context)
+
+// Step3. Request message an der Variable request zu zuweisen
+def request = testRunner.getTestCase().getTestStepByName("Multiply").getPropertyValue("Request")
+
+// Step4. Methode XmlHolder aufrufen und gesammte Request message an holderReq variable zuweisen
+def holderReq = myObject.getXmlHolder(request)
+
+// Mit der variable holderReq wird auf einzelne Nodes zugreifen und an variable a und b zuweisen
+def aReq = holderReq.getNodeValue("//tem:Multiply/tem:intA")
+def bReq = holderReq.getNodeValue("//tem:Multiply/tem:intB")
+log.info "a ist = "+aReq +"   b ist = "+ bReq
+
+//Step5. Die Werte von Testcase Property wird in a und b gespeichert
+def a = testRunner.testCase.getPropertyValue("a")
+def b = testRunner.testCase.getPropertyValue("b")
+log.info "a ist = "+a +"   b ist = "+ b
+//Step6.  Die Werte von a und b wird in request for A und B gesetzt
+holderReq.setNodeValue("//tem:Multiply/tem:intA",a)
+holderReq.setNodeValue("//tem:Multiply/tem:intB",a)
+
+// Step7. Aufruf von method getXml von class groovyUtil
+def FinalXML = holderReq.getXml()
+log.info FinalXML
+
+// Step8. Setzten die neue xml request (siehe Step 7) 
+testRunner.testCase.testSteps["Multiply"].setPropertyValue("Request", FinalXML)
+
+// Step9. define a variable and assigen the test step Multiply.
+def MultiplyReqTest = testRunner.testCase.testSteps["Multiply"]
+
+// Step10. create an object to use the method run of the WsdlTestRunContext
+def contextMultiplyTest = new WsdlTestRunContext(MultiplyReqTest)
+// the comand for run the test   run(testRunner, context)
+MultiplyReqTest.run(testRunner,contextMultiplyTest)
+
+
+log.info "=================================================="
+// Ausführen des Testfalles und zuweisen zu Variabele status. This method (runTestStepByName) runs the specified test step and returns the result.
+def status = testRunner.runTestStepByName("Multiply")
+// Status des Testes and variable result zuweisen
+def result = status.getStatus().toString();
+log.info result
+// Response message an der Variable responseValue zu zuweisen
+def responseValue= testRunner.getTestCase().getTestStepByName("Multiply").getPropertyValue("Response")
+// XML message wird an varialbe holderRes zugewiesen
+def holderRes = myObject.getXmlHolder(responseValue)
+// Mit der variable holderReq wird auf einzelne Nodes zugreifen und an variable a und b zuweisen
+def Res = holderRes.getNodeValue("//*:MultiplyResult")
+log.info "Resultat ist =  "+Res
+
+log.info "==================================================="
+// die Werte werden in integer convertiert
+int aa = aReq.toInteger() + 1
+int bb = bReq.toInteger() + 1
+// Die beide Nodes bekommen neue Werte
+holderReq.setNodeValue("//tem:Multiply/tem:intA", aa)
+holderReq.setNodeValue("//tem:Multiply/tem:intB", bb)
+log.info "aa ist = "+aa +"   bb ist = "+ bb
+// Geänderte XML wird an FinalXml zugewiesen
+FinalXml = holderReq.getXml()
+log.info FinalXml
+// Die Request message in API wird mit neue XML message ersetzt. 
+testRunner.testCase.testSteps["Multiply"].setPropertyValue("Request", FinalXml)
+
+//send the new Request using Groovy Script
+def MultiTest = testRunner.testCase.testSteps["Multiply"] 
+log.info "es ist MultiTest = "+MultiTest
+def RunContext = new WsdlTestRunContext(MultiTest)
+MultiTest.run(testRunner,RunContext) 
+
+
+def result12= testRunner.getTestCase().getTestStepByName("Multiply").getPropertyValue("Response")
+def holderRes2 = myObject.getXmlHolder(result12)
+
+def Res2 = holderRes2.getNodeValue("//*:MultiplyResult")
+log.info "Resultat2 ist =  " +Res2
+
+int Res2FinalValue = Res2.toInteger()
+//assert Res2FinalValue == aa*bb
+if (Res2FinalValue == aa*bb){
+	log.info "passed"
+}else{
+	log.info "Failed"
+}</script></con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="GroovyScript" id="22781641-866e-4067-9330-db4413a9ea22">
+        <con:settings/>
+        <con:config>
+          <script>/*def st = new String[5]
+st[0] ="a"
+st[1] = "b"
+st[2] = "c"
+st[3] = "d"
+st[4] = "e"
+log.info st[4]
+for (def i=0;i&lt;5;i++){
+	log.info st[i]
+}
+*/
+
+def sum(int a, int b){
+	 a+b
+}
+
+C = sum(2,4)
+log.info "test1 "+C
+
+def sum2(int c=10, int d=30){
+	 c+d
+}
+
+G = sum2()
+log.info "test1 "+G
+
+def subjection(int v, int w){
+	def h=v-w
+	return h
+}
+def h = subjection(40,21)
+//log.info h</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="GroovyScript3" id="2ed7a2e6-5fb6-4f9e-92a4-ca655e020a6b">
+        <con:settings/>
+        <con:config>
+          <script/>
+        </con:config>
+      </con:testStep>
+      <con:properties>
+        <con:property>
+          <con:name>Request</con:name>
+          <con:value><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:Multiply>
+         <tem:intA>66</tem:intA>
+         <tem:intB>88</tem:intB>
+      </tem:Multiply>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:value>
+        </con:property>
+      <con:property><con:name>a</con:name><con:value>10</con:value></con:property><con:property><con:name>b</con:name><con:value>20</con:value></con:property></con:properties>
+      <con:reportParameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="771c59b9-fbfd-4070-8a11-6a34fab70340">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:testCase>
+    <con:testCase id="f9d91bfe-990d-4430-bfff-367c5504ae76" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TST50-ANE00-AZ0004" searchProperties="true" timeout="0" maxResults="0">
+      <con:description>=====TCName======  
+TST50-ANE00-AZ0004
+=====Beschreibung======  
+Beschreibung0004
+=====fachlische Content======  
+fa004
+=====technische Content======  
+dataSource 0004
+=====Kommentar======  
+kom_4</con:description><con:settings/>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      <con:testStep type="request" id="a115e028-934e-4a18-be00-fedf87467af1" name="Subtract">
+        <con:settings/>
+        <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:interface>CalculatorSoap</con:interface>
+          <con:operation>Subtract</con:operation>
+          <con:request name="Subtract" id="904f4a04-358e-410d-ae76-130b587ca527">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>http://www.dneonline.com/calculator.asmx</con:endpoint>
+            <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:Subtract>
+         <tem:intA>20</tem:intA>
+         <tem:intB>5</tem:intB>
+      </tem:Subtract>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+            <con:assertion type="Valid HTTP Status Codes" id="c09827b6-bb24-4611-aba6-de6947faf8a3" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="980ae805-ef74-48e7-bb64-7aa670d1290e" name="Response SLA">
+              <con:configuration>
+                <SLA>1600</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="SOAP Fault Assertion" id="940cfea7-bfa8-404e-80b2-4aae72f521f5" name="Not SOAP Fault"/>
+            <con:assertion type="Schema Compliance" id="44e67311-eeb5-4cd8-9c59-cbc86f86e2bd" name="Schema Compliance">
+              <con:configuration/>
+            </con:assertion>
+            <con:assertion type="GroovyScriptAssertion" id="b287c27a-cce8-4999-b13b-38a3766b5b59" name="Script Assertion"><con:configuration><scriptText>def scripts = new ScriptLibrary(context:context, log:log, testRunner:testRunner)</scriptText></con:configuration></con:assertion><con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/><con:wsaConfig action="http://tempuri.org/Subtract" mustUnderstand="NONE" version="200508"/>
+            <con:wsrmConfig version="1.2"/>
+            <con:environmentSpec>
+              <con:entry environmentId="771c59b9-fbfd-4070-8a11-6a34fab70340">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+            </con:environmentSpec>
+          </con:request>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="GroovyScript_2" id="aecf4106-0081-4f2c-a199-0fcc51d4ddc1"><con:settings/><con:config><script>// get a reference to the library TestSuite
+library = testRunner.testCase.testSuite.project.testSuites["Library"]
+
+// find the module within the library 
+module = library.testCases["module-name"].testSteps["Example"]
+
+// initialise the library; which places an instance of Example in the context
+module.run(testRunner, context)
+
+// get the instance of example from the context.
+def example = context.example
+
+// run the method, with parameter
+log.info "example.execute() = " + example.execute("This is the first messaage =Tester ")</script></con:config></con:testStep><con:testStep type="groovy" name="GroovyScript" id="d2eea396-e55e-4e77-b6c6-819859894935">
+        <con:settings/>
+        <con:config><script>
+
+
+def reqTestCase = testRunner.testCase.testSteps["Subtract"].getPropertyValue("Request")
+
+def grooObject = new com.eviware.soapui.support.GroovyUtils(context)
+
+holder = grooObject.getXmlHolder(reqTestCase)
+
+//def grooObject2 = new com.eviware.soapui.impl.wsdl.testcase.WsdlTestCase()
+
+def a = testRunner.testCase.getPropertyValue("a")
+def b = testRunner.testCase.getPropertyValue("b")
+
+log.info "Test case Custom propert a = " +a  +"   Test case Custom propert b = "  +b
+
+def aNode = holder.getNodeValue("//tem:Subtract/tem:intA")
+def bNode = holder.getNodeValue("//tem:Subtract/tem:intB")
+log.info "Test case Custom propert aNode = " +aNode  +"   Test case Custom propert b = "  +bNode</script></con:config>
+      </con:testStep>
+      <con:properties>
+        <con:property userSpecific="true">
+          <con:name>a</con:name>
+          <con:value>40</con:value>
+        </con:property>
+      <con:property><con:name>b</con:name><con:value>400</con:value></con:property></con:properties>
+      <con:reportParameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="771c59b9-fbfd-4070-8a11-6a34fab70340">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:testCase>
+    <con:testCase id="108dff74-0e4d-4550-9566-c9e2cc0888ca" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Copy of TST50-ANE00-AZ0005" searchProperties="true" timeout="0" maxResults="0">
+      <con:description>not tauch please</con:description><con:settings/>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      <con:testStep type="request" id="d24d7eb2-66ee-4749-b908-da8f36c9f317" name="Subtract">
+        <con:settings/>
+        <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:interface>CalculatorSoap</con:interface>
+          <con:operation>Subtract</con:operation>
+          <con:request name="Subtract" id="904f4a04-358e-410d-ae76-130b587ca527">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:encoding>UTF-8</con:encoding>
+            <con:endpoint>http://www.dneonline.com/calculator.asmx</con:endpoint>
+            <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:Subtract>
+         <tem:intA>20</tem:intA>
+         <tem:intB>5</tem:intB>
+      </tem:Subtract>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+            <con:assertion type="Valid HTTP Status Codes" id="c09827b6-bb24-4611-aba6-de6947faf8a3" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="980ae805-ef74-48e7-bb64-7aa670d1290e" name="Response SLA">
+              <con:configuration>
+                <SLA>1600</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="SOAP Fault Assertion" id="940cfea7-bfa8-404e-80b2-4aae72f521f5" name="Not SOAP Fault"/>
+            <con:assertion type="Schema Compliance" id="44e67311-eeb5-4cd8-9c59-cbc86f86e2bd" name="Schema Compliance">
+              <con:configuration/>
+            </con:assertion>
+            <con:assertion type="GroovyScriptAssertion" id="b287c27a-cce8-4999-b13b-38a3766b5b59" name="Script Assertion"><con:configuration><scriptText>def scripts = new ScriptLibrary(context:context, log:log, testRunner:testRunner)</scriptText></con:configuration></con:assertion><con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/><con:wsaConfig action="http://tempuri.org/Subtract" mustUnderstand="NONE" version="200508"/>
+            <con:wsrmConfig version="1.2"/>
+            <con:environmentSpec>
+              <con:entry environmentId="771c59b9-fbfd-4070-8a11-6a34fab70340">
+                <con:authProfile>Inherit From Parent</con:authProfile>
+              </con:entry>
+            </con:environmentSpec>
+          </con:request>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="GroovyScript_2" id="31ea25e3-a5b6-4797-98c6-d5f73ea2fe5c"><con:settings/><con:config><script>// get a reference to the library TestSuite
+library = testRunner.testCase.testSuite.project.testSuites["Library"]
+
+// find the module within the library 
+module = library.testCases["module-name"].testSteps["Example"]
+
+// initialise the library; which places an instance of Example in the context
+module.run(testRunner, context)
+
+// get the instance of example from the context.
+def example = context.example
+
+// run the method, with parameter
+log.info "example.execute() = " + example.execute("This is the first messaage =Tester ")</script></con:config></con:testStep><con:testStep type="groovy" name="GroovyScript" id="4c8731ed-82c4-443c-82f6-c4627e459bf5">
+        <con:settings/>
+        <con:config><script>
+
+
+def reqTestCase = testRunner.testCase.testSteps["Subtract"].getPropertyValue("Request")
+
+def grooObject = new com.eviware.soapui.support.GroovyUtils(context)
+
+holder = grooObject.getXmlHolder(reqTestCase)
+
+//def grooObject2 = new com.eviware.soapui.impl.wsdl.testcase.WsdlTestCase()
+
+def a = testRunner.testCase.getPropertyValue("a")
+def b = testRunner.testCase.getPropertyValue("b")
+
+log.info "Test case Custom propert a = " +a  +"   Test case Custom propert b = "  +b
+
+def aNode = holder.getNodeValue("//tem:Subtract/tem:intA")
+def bNode = holder.getNodeValue("//tem:Subtract/tem:intB")
+log.info "Test case Custom propert aNode = " +aNode  +"   Test case Custom propert b = "  +bNode</script></con:config>
+      </con:testStep>
+      <con:properties>
+        <con:property userSpecific="true">
+          <con:name>a</con:name>
+          <con:value>40</con:value>
+        </con:property>
+      <con:property><con:name>b</con:name><con:value>400</con:value></con:property></con:properties>
+      <con:reportParameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="771c59b9-fbfd-4070-8a11-6a34fab70340">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:testCase><con:properties>
+      <con:property>
+        <con:name>a</con:name>
+        <con:value>testSuiteproa</con:value>
+      </con:property>
+      <con:property>
+        <con:name>b</con:name>
+        <con:value>testsutieprb</con:value>
+      </con:property>
+    </con:properties>
+    <con:reportParameters/>
+    <con:environmentSpec>
+      <con:entry environmentId="771c59b9-fbfd-4070-8a11-6a34fab70340">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:testSuite>
+  <con:testSuite id="ecead128-233f-468e-86d9-c3c5dfe3b259" name="Test Suite 2">
+    <con:settings/>
+    <con:savedRecentRuns>1</con:savedRecentRuns>
+    <con:runType>SEQUENTIAL</con:runType>
+    <con:testCase id="64f800e2-0202-43b5-ac57-a98fa458d747" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCaseDis" searchProperties="true" timeout="0" maxResults="0">
+      <con:description>Saeed</con:description><con:settings/>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      <con:testStep type="request" name="Add" id="3433f1c7-3e7c-4dc4-bdf4-25841e617b9a"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CalculatorSoap</con:interface><con:operation>Add</con:operation><con:request name="Add" id="25c19f62-9da7-45eb-897c-8659bb84629c"><con:description>SOAP Request description</con:description><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.dneonline.com/calculator.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:Add>\r
+         <tem:intA>2</tem:intA>\r
+         <tem:intB>3</tem:intB>\r
+      </tem:Add>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="45aeb8e1-6ef9-417c-b83d-61e02134128b"/><con:assertion type="GroovyScriptAssertion" id="4f023144-0bf3-4fbe-b2ee-efe8a51c8592" name="Script Assertion"><con:configuration/></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="groovy" name="ReadtheResponse" id="37978b07-280f-4a97-958e-3010ec3ebf52"><con:settings/><con:config><script>def TS = testRunner.testCase.testStep.getName()
+def TC = testRunner.testCase.getName()
+log.info TC</script></con:config></con:testStep><con:testStep type="groovy" name="ScriptChecker" id="ade249de-ec30-40c0-8548-1c6d9b83bb05"><con:settings/><con:config><script><![CDATA[import com.eviware.soapui.impl.wsdl.teststeps.*
+	def projectName = testRunner.testCase.testSuite.project.name
+	def suiteName = testRunner.testCase.name
+	def testCaseName = testRunner.testCase.name
+	//log.info "Project name is =  "+projectName +"Suite nmae is =  "+suiteName +"Test Case name is =  "+testCaseName
+	
+	//read the txt file
+	List<String> docValueList = new ArrayList<String>() // or you can also use def docValueList= []
+	// reading the file line bei line 
+	new File('D:/temp/TestSuite2.txt').withReader { reader -> 
+	reader.eachLine { 	
+		 	TC= docValueList << it // add the lines to the Array 
+		 } 
+	}
+	 log.info "===================="
+	 log.info "The List of the Doc Value =   " +TC 
+	 log.info "===================="
+	
+	 // read the Test cases and update Discription
+	
+	 //List<String> TcListOfSuite = new ArrayList<String>() // Creating a Array
+	 def TcListOfSuite=[]// creating an Array for the Test cases
+	 // read all the test cases from Suite
+	 def TcsList = testRunner.testCase.testSuite.getTestCaseList()// creating the object list TC
+	 TcsList.each(){ // going throth all the Test cases from the Suite
+	 	 TCL = TcListOfSuite << it.name // Add the test case name to created Array
+	 	Descri=  it.getDescription()  // get the TC from the list
+	 	// update the test case Description with the lines in the File abouv "TestSuite2.txt"
+	 	for(i=0; i<TcListOfSuite.size();i++){
+	 	it.setDescription(TC[i]+"\n" +" ==========="+"\n"+"Test"+TCL[i])}
+	 	log.info "The list of the Test cases belong to the Suite=   "+it.name +"   Description is =    "+Descri
+	 	log.info "The test Cases assign to an Array=   "+TCL
+	 	}
+	 
+	  
+]]></script></con:config></con:testStep><con:testStep type="groovy" name="GroovyExample" id="77185ecd-e83a-485b-924c-4e4c903eab57"><con:settings/><con:config><script>import com.eviware.soapui.impl.wsdl.teststeps.*
+import com.eviware.soapui.support.XmlHolder
+import jxl.*
+import jxl.write.*
+import org.apache.poi.xssf.usermodel.*
+import org.apache.poi.xssf.usermodel.XSSFWorkbook
+
+log.info "====First part for the response dat========="
+def request = testRunner.testCase.getTestStepByName("Add")
+def responseData = request.getProperty("Response")
+log.info (responseData.value)
+
+log.info "======= for the project name ====="
+def project = context.testCase.testSuite.project.name
+log.info( project)
+def testSuite = context.testCase.testSuite.name  // 1 is the index number of testsuite
+log.info( testSuite)
+
+log.info "====== create Value with contxt============="
+def contxEx = context.Saeed = "Hi"
+log.info contxEx
+log.info "======Test case name ============="
+def testCase = testRunner.testCase.name
+log.info "1_ This is the test Case name="+testCase 
+def testCaseName = testRunner.testCase.name
+log.info "2_ testCaseName: ${testCaseName}"
+
+groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+testCase = testRunner.testCase.name
+log.info "3_ test case name ist = "+testCase
+
+def stepNameVariable = context.expand('${#TestCase#Minoo}')
+log.info stepNameVariable
+//log.info context.testCase.name
+
+stepNameVariable = context.expand('${#TestCase#SourceTestStep}')
+log.info stepNameVariable
+log.info context.testCase.name
+
+log.info "===============TestStep name==========="
+def teststepName = context.testCase.getTestStepAt(0).getLabel()
+log.info "the Step name is = : "+teststepName
+
+log.info "===========finding the index of Steps================="
+log.info context.currentStepIndex    //will give you 3
+
+def l = []
+
+context.testCase.getTestStepList().each {
+	l.add(it.getName())
+}
+
+log.info l.findIndexOf {it == 'Add'}    //will return 3
+
+log.info "done"
+
+log.info "================= test case list ==============="
+
+//def testCaseList=[]
+def SuitName = testRunner.testCase.testSuite.getName()
+log.info SuitName
+File myFileName = new File("D:/temp/TestSuite2.txt")
+   myFileName.bytes = []
+   
+for( tc in testRunner.testCase.testSuite.getTestCaseList()) {
+  
+   def TestCaseDescription = testRunner.testCase.getDescription()
+    log.info "test Case name = : ${tc.getName()}  "
+     def TestCaseName = "${tc.getName()}"
+
+  myFileName.append("\n${tc.getName()}")
+}
+log.info "=================update description================="
+
+ testRunner.testCase.getTestStepList(){
+	def desc1 = '---Test Case Nummer----'
+	def desc2 = 'New description - TEST'
+	def desc3 = '----Test Case description - TEST----'
+	def desc4 = '-BlaBlaBal'
+	def step = it.getTestCaseList().each {
+	step.setDescription(desc1  +desc2  +desc3  +desc4)
+	if (step.getDescription() != desc1) {
+		// here we come with REST test step
+		log.info step.getName + ":" + step.getDescription
+		step.getTestRequest().setDescription('Another ')
+	}
+}
+ }</script></con:config></con:testStep><con:testStep type="groovy" name="GroovyScript_2" id="bcec89ea-9fa4-4910-9ced-5b1c0c949aa4"><con:settings/><con:config><script>// get a reference to the library TestSuite
+library = testRunner.testCase.testSuite.project.testSuites["Library"]
+
+// find the module within the library 
+module = library.testCases["module-name"].testSteps["Example"]
+
+// initialise the library; which places an instance of Example in the context
+module.run(testRunner, context)
+
+// get the instance of example from the context.
+def example = context.example
+
+// run the method, with parameter
+log.info "example.execute() = " + example.execute("Hi Saeed this your message")</script></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script" id="bbebcfa1-eeb1-432e-987d-e1153f8bcc9c"><con:description>SOAP Request description</con:description><con:settings/><con:config><script>def file = new File("D:/Neues Textdokument.txt")
+
+def fr = new FileReader(file)
+/*def i = fr.read()
+
+while (i!= -1){
+	log.info ((char)i)
+	i=fr.read()
+}*/
+
+/*def br = new BufferedReader(fr)
+def s = br.readLine();
+while (s!= null)
+{
+	log.info s
+	s = br.readLine()
+	//testRunner.testCase.testSuite.setPropertyValue( s, "55")
+	testRunner.testCase.setPropertyValue( s, "66");
+	}*/
+
+//context.testCase.getTestStepList().each {
+	//def step = it
+	//step.setDescription('SOAP Request description')
+	 context.testCase.setDescription("Test case nummer 1")
+	context.testCase.getDescription()
+//}</script></con:config></con:testStep><con:testStep type="groovy" name="ExtractAllGroovyCodeProject" id="986fd753-f696-4fd5-aac0-c711f8f07c42"><con:settings/><con:config><script>import com.eviware.soapui.impl.wsdl.teststeps.WsdlGroovyScriptTestStep
+def testCases = context.testCase.testSuite.getTestCaseList()
+testCases.each {
+    for( testSteps in it.testStepList ) {
+	if( testSteps instanceof WsdlGroovyScriptTestStep ) {
+	    def outfile = new File("D:/temp/${it.name}-${testSteps.name}.groovy")
+	    outfile.write(testSteps.getScript())
+	}
+    }
+}</script></con:config></con:testStep><con:testStep type="groovy" name="ReadExcel" id="bc54fb13-25b3-471d-abe6-4de67c4c75b8"><con:settings/><con:config><script>
+/*import org.apache.poi.ss.usermodel.*;def excelFile = new File('D:/Test.xlsx')
+excelFile.withInputStream { is ->
+    workbook = new XSSFWorkbook(is)
+    (0..&lt;workbook.numberOfSheets).each { sheetNumber ->
+        XSSFSheet sheet = workbook.getSheetAt( sheetNumber )
+        sheet.rowIterator().each { row ->
+            row.cellIterator().each { cell ->
+                println cell.toString()
+            }
+        }
+    }
+}*/
+// IMPORT THE LIBRARIES WE NEED
+
+import com.eviware.soapui.support.XmlHolder
+import jxl.*
+import jxl.write.*
+import org.apache.poi.xssf.usermodel.*
+import org.apache.poi.xssf.usermodel.XSSFWorkbook
+// DECLARE THE VARIABLES
+
+def myTestCase = context.testCase //myTestCase contains the test case
+def counter,next,previous,size //Variables used to handle the loop and to move inside the file
+FileInputStream file = new FileInputStream("D:\\MyFile_1.xlsx")
+XSSFWorkbook wb = new XSSFWorkbook(file)
+XSSFSheet sheet = wb.getSheetAt(0)
+def rowNumber = sheet.getPhysicalNumberOfRows()
+	for(def i=0; i &lt; rowNumber ; i++){
+		row= sheet.getRow(i)
+		cellNumber = row.getPhysicalNumberOfCells()
+		for(def j=0; j &lt; cellNumber; j++){
+			cell = row.getCell(j)
+			def value = cell.getStringCellValue()
+			if(value == "TST30-AZ0001"){
+				log.info value
+			}
+			
+		}
+	}
+
+wb.close() //close the file
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="ExcleRead2" id="7b43070a-2a26-4fc7-afd2-614303be2899"><con:settings/><con:config><script>import java.io.*;
+import java.util.*;
+import java.io.File;
+import java.io.FileInputStream;
+import java.util.Iterator;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.apache.commons.io.FilenameUtils
+import java.io.FileInputStream
+import java.io.FileOutputStream 
+import java.io.IOException
+import java.io.InputStream
+import java.util.Iterator
+import java.util.List 
+
+File myFile = new File("D:\\temp\\Test.xlsx")
+FileInputStream fis = new FileInputStream(myFile)
+XSSFWorkbook myWorkBook = new XSSFWorkbook(fis);
+XSSFSheet mySheet = myWorkBook.getSheet("Tabelle1")
+XSSFRow row
+XSSFCell cell
+size = mySheet.getRows().toInteger()
+Iterator rows = mySheet.iterator();
+while(rows.hasNext()){
+	row=(XSSFRow)rows.next()
+	Iterator cells = row.cellIterator()
+	while (cells.hasNext()){
+		cell=(XSSFCell) cells.next(); 
+		log.info cell  
+               /* if (cell.getCellType() == "text"){
+			log.info (cell.getStringCellValue()+"")
+		}else if(cell.getCellType()=="numeric"){
+			log.info (cell.getNumericCellValue()+"")
+		}else{
+			//U can handel boolean, ....
+		}*/
+	}
+}
+
+//log.info FileInputStream
+
+  </script></con:config></con:testStep><con:testStep type="groovy" name="ReadExcel2" id="78d942c0-d2db-4611-b384-d6c43c57a7a6"><con:settings/><con:config><script>import java.io.*;
+import java.util.*;
+import java.io.File;
+import java.io.FileInputStream;
+import java.util.Iterator;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.apache.commons.io.FilenameUtils
+import java.io.FileInputStream
+import java.io.FileOutputStream 
+import java.io.IOException
+import java.io.InputStream
+import java.util.Iterator
+import java.util.List 
+
+
+FileInputStream fis = new FileInputStream(new File("D:\\temp\\Test.xlsx"))
+XSSFWorkbook wb = new XSSFWorkbook(fis);
+XSSFSheet sh = wb.getSheetAt(0);
+for(Row row : sh) {             
+    for(Cell cell : row) {
+        log.info(cell.xSSFCell()+"\t");
+    }
+}</script></con:config></con:testStep><con:properties>
+        <con:property>
+          <con:name>a</con:name>
+          <con:value>Suite2TC1</con:value>
+        </con:property>
+      <con:property><con:name>Celine</con:name><con:value>66</con:value></con:property><con:property><con:name>Eileen</con:name><con:value>66</con:value></con:property><con:property><con:name>Aida</con:name><con:value>66</con:value></con:property><con:property><con:name>Minoo</con:name><con:value>Montazeralih</con:value></con:property><con:property><con:name>SourceTestStep</con:name><con:value>this is sourceTestStep</con:value></con:property></con:properties>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:testCase id="c47fc984-18f1-4462-b04f-b58a3d9c524b" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase2VonSuite2" searchProperties="true"><con:description>Saeed</con:description><con:settings/><con:properties/></con:testCase><con:testCase id="13edaef8-d1ae-4347-850c-a80010fbd5bc" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase3" searchProperties="true"><con:description/><con:settings/><con:properties/></con:testCase><con:testCase id="58c22e74-a7f6-4d9b-b81a-f954b5348a4a" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase4" searchProperties="true"><con:description/><con:settings/><con:properties/></con:testCase><con:properties>
+      <con:property>
+        <con:name>a</con:name>
+        <con:value>testSuit2</con:value>
+      </con:property>
+    <con:property><con:name>Celine</con:name><con:value>55</con:value></con:property><con:property><con:name>Eileen</con:name><con:value>55</con:value></con:property><con:property><con:name>Aida</con:name><con:value>55</con:value></con:property><con:property><con:name>Minoo</con:name><con:value>55</con:value></con:property></con:properties>
+    <con:reportParameters/>
+  </con:testSuite>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testSuite id="2330c6d4-9756-4e05-84be-2beec44871b9" name="Library" disabled="true"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="3dd88624-e2bd-4fe3-b617-b812335d85d4" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="module-name" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Example" id="04958978-da1a-43c8-b4cf-4a0226cf56ae"><con:settings/><con:config><script>class Example {
+ def log
+ def context
+ def testRunner
+ // Class constructor with same case as Class name
+ def Example(logIn,contextIn,testRunnerIn) {
+  this.log = logIn
+  this.context = contextIn
+  this.testRunner = testRunnerIn
+ }
+ def execute(message){ 
+      // do some stuff to prove I've run with right context, etc.
+      log.info testRunner
+      log.info context
+      log.info "return "+message
+      return message
+ }
+}
+
+context.setProperty( "example", new Example( log, context, testRunner) )
+log.info "Library Context:"+context</script></con:config></con:testStep><con:testStep type="groovy" name="WriteTcToFile" id="376a0ccf-6169-44f6-9e4b-fe71336939d2"><con:settings/><con:config><script>
+import com.eviware.soapui.support.XmlHolder
+import jxl.*
+import jxl.write.*
+import org.apache.poi.xssf.usermodel.*
+import org.apache.poi.xssf.usermodel.XSSFWorkbook
+/*def testCaseList=[]
+SuitName = testRunner.testCase.testSuite.project.testSuites["Test Suite 2"].getName()
+log.info SuitName
+File myFileName = new File("D:/temp/"+SuitName +".txt")
+   myFileName.bytes = []
+  def TCNumber= testRunner.testCase.testSuite.project.testSuites["Test Suite 2"].getTestCaseCount()
+  log.info "The number of the Test cases for this Suite is =  "+TCNumber
+  def list = context.testCase.testSuite.project.testSuites["Test Suite 2"].getTestCaseList()
+list.eachWithIndex {
+	testCase, idx ->
+	log.info "$idx.${testCase.getName()}"
+}
+  for( testCases in context.testCase.testSuite.project.testSuites["Test Suite 2"].getTestCaseList() ) {
+	def name = "${testCases.getName()}"
+	def desc = "${testCases.getDescription()}"
+	log.info "Descriptiin ist gleich =  " +desc
+
+   log.info "test Case name = : ${testCases.getName()}"
+   log.info "this is the character of varaible name = " + name[5..7]
+   log.info "this is the substring of variable name = "+name.substring(3)
+   if (name.matches(".*(est).*")&amp;&amp; TCNumber&lt;5 ){
+    myFileName.append("\n$name")}
+   }*/
+   
+//log.info "================= test case list ==============="
+def testCaseList=[]
+def SuitNameTarget = testRunner.testCase.testSuite.project.testSuites["Test Suite 1"].getName()
+def SuitNameTarget1 = testRunner.testCase.testSuite.project.testSuites["Test Suite 1"]
+log.info SuitNameTarget
+File myFileName = new File("D:/TestSuite2.txt")
+   myFileName.bytes = []
+   
+for( tc in SuitNameTarget1.getTestCaseList()) {
+  
+   def TestCaseDescription = testRunner.testCase.getDescription()
+    log.info "test Case name = : ${tc.getName()}  "
+     def TestCaseName = "${tc.getName()}"
+
+  myFileName.append("\n${tc.getName()}")
+}
+
+def myTestCase = context.testCase //myTestCase contains the test case
+def counter,next,previous,size //Variables used to handle the loop and to move inside the file
+FileInputStream file = new FileInputStream("D:\\MyFile_1.xlsx")
+XSSFWorkbook wb = new XSSFWorkbook(file)
+XSSFSheet sheet = wb.getSheetAt(0)
+def rowNumber = sheet.getPhysicalNumberOfRows()
+for( tc in SuitNameTarget1.getTestCaseList()) {
+	 def TestCaseName = "${tc.getName()}"
+	for(def i=0; i &lt; rowNumber ; i++){
+		row= sheet.getRow(i)
+		cellNumber = row.getPhysicalNumberOfCells()
+		for(def j=0; j &lt; cellNumber; j++){
+			cell = row.getCell(j)
+			def value = cell.getStringCellValue()
+			if(value == "TST50-ANE00-AZ0001"){
+				log.info value
+				for( testCases in SuitNameTarget1.getTestCaseList() ) {
+ 				testCases.each{
+ 				//log.info(it.name)
+ 				if (it.getName() == "TST50-ANE00-AZ0001")
+ 					it.setDescription("SaeedJAN")				
+ 		//testCases.setDescription(desc[i])
+ 				}
+			}
+		}
+	}
+}
+}
+/*for( testCases in SuitNameTarget1.getTestCaseList() ) {
+ 
+ 		testCases.each{
+ 		log.info(it.name)
+ 		it.setDescription(value)
+ 	
+ 		//testCases.setDescription(desc[i])
+ }
+	def desc = "${testCases.getDescription()}"*/
+	
+	//if (!desc.isEmpty()) {
+		//testCases.setDescription(desc1 )
+		// here we come with REST test step
+		//log.info testCases.getName + ":" + testCases.getDescription
+		//testCases.getTestRequest().setDescription('Another ')
+	//}
+	</script></con:config></con:testStep><con:testStep type="groovy" name="GroovyScript_New_Try" id="56e62fd2-99e1-49a2-b7e6-2910464b704f"><con:settings/><con:config><script>//def project = testRunner.getTestCase().getProject().getWorkspace().getProjectByName("Project 1")
+//def TCS = project.testSuite["Test Sutie 2"].getTestCase["TestCaseDis"]
+
+def prj = testRunner.testCase.testSuite.project.workspace.getProjectByName("Project 1")
+tCase = prj.testSuites['Test Suite 2'].testCases['TestCaseDis']
+tStep = tCase.getTestStepByName("Add")
+
+
+//.getTestStepByName("Add")
+//testSuites["Test Suite 2"].testCase("TestCaseDis").description
+log.info prj
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="ReadTestCaseNameWriteinFile" id="1aa1ad83-8508-4cf8-90f7-9415c20f117f"><con:settings/><con:config><script>def projName = testRunner.testCase.testSuite.project.getName();
+def workSpace = testRunner.testCase.testSuite.project.workspace.getName()
+
+log.info testRunner.metaClass.methods*.name.unique().sort()
+
+//def workspace = projName.workspace.getName());
+log.info( "proj name =  "+projName +""+workSpace)
+</script></con:config></con:testStep><con:testStep type="groovy" name="ReadExcelWriteTcToDescription" id="f1a1972f-309e-49b1-badd-1459bc8cf403"><con:settings/><con:config><script>import java.io.*;
+import java.util.Iterator;
+import com.eviware.soapui.support.XmlHolder
+import jxl.*
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import jxl.write.*
+import org.apache.poi.xssf.usermodel.*
+import org.apache.poi.xssf.usermodel.XSSFWorkbook
+
+   
+//log.info "================= test case list ==============="
+def testCaseList=[]
+def SuitNameTarget = testRunner.testCase.testSuite.project.testSuites["Test Suite 1"].getName()
+def SuitNameTarget1 = testRunner.testCase.testSuite.project.testSuites["Test Suite 1"]
+//log.info SuitNameTarget
+/*File myFileName = new File("D:/temp/TestSuite2.txt")
+   myFileName.bytes = []
+   
+for( tc in SuitNameTarget1.getTestCaseList()) {
+  
+   def TestCaseDescription = testRunner.testCase.getDescription()
+    log.info "test Case name = : ${tc.getName()}  "
+     def TestCaseName = "${tc.getName()}"
+
+  myFileName.append("\n${tc.getName()}")
+}*/
+
+def myTestCase = context.testCase //myTestCase contains the test case
+def counter,next,previous,size //Variables used to handle the loop and to move inside the file
+FileInputStream file = new FileInputStream("D:\\MyFile_1.xlsx")
+XSSFWorkbook wb = new XSSFWorkbook(file)
+XSSFSheet sheet = wb.getSheetAt(0)
+def rowNumber = sheet.getPhysicalNumberOfRows()
+List&lt;String> cellValues = new ArrayList&lt;String>()
+
+def TestCaseName = "TST50-ANE00-AZ0002"
+	for(def i=0; i &lt; rowNumber ; i++){
+		row= sheet.getRow(i)
+		cellNumber = row.getPhysicalNumberOfCells()
+			for(def j=0; j &lt; cellNumber; j++){
+				
+				log.info cellNumber
+				cell = row.getCell(j)
+				def value = cell.getStringCellValue()
+				//log.info "FIRST VALUE =  " +value
+					if(value == TestCaseName){
+						
+						Iterator&lt;Cell> cellIterator = row.cellIterator()
+						
+						while(cellIterator.hasNext()) {
+							
+							cell1= cellIterator.next()
+							//Cell c = s.getCell(j,i)
+							def value2= cell1.getStringCellValue()
+									def strval = cell1.getStringCellValue()
+         								cellValues.add(strval);
+									log.info cellValues	
+										
+											
+											//log.info "ITERATOR=   " +value2
+											for( testCases in SuitNameTarget1.getTestCaseList() ) {
+												
+												testCases.each{
+													if (it.getName() == value){
+													it.setDescription(cellValues)
+												//testCases.setDescription(desc[i])
+												 }
+												 
+											// }
+										//}
+							}
+							
+					}
+					
+			}
+			
+
+	}
+
+}
+
+}
+
+
+
+
+/*for( testCases in SuitNameTarget1.getTestCaseList() ) {
+ 
+ 		testCases.each{
+ 		log.info(it.name)
+ 		it.setDescription(value)
+ 	
+ 		//testCases.setDescription(desc[i])
+ }
+	def desc = "${testCases.getDescription()}"*/
+	
+	//if (!desc.isEmpty()) {
+		//testCases.setDescription(desc1 )
+		// here we come with REST test step
+		//log.info testCases.getName + ":" + testCases.getDescription
+		//testCases.getTestRequest().setDescription('Another ')
+	//}
+	</script></con:config></con:testStep><con:testStep type="groovy" name="ArrayList" id="252a8145-73c7-4652-9eb9-dd6e66961497"><con:settings/><con:config><script>ArrayList&lt;String> tripIds = new ArrayList&lt;String>();
+        tripIds.add("a");
+        tripIds.add("b");
+        tripIds.add("c");
+        StringBuffer sb = new StringBuffer();
+        for (int i=0; i&lt;tripIds.size(); i++)
+        {
+            if(i!=0){
+            sb.append(";").append(tripIds.get(i));
+            }else{
+                sb.append(tripIds.get(i));
+            }
+        }
+        String listInString = sb.toString();
+        log.info(listInString +"\n");</script></con:config></con:testStep><con:testStep type="groovy" name="ReadExcelWriteDescription" id="a4bb20bc-f269-4a29-a5e6-c169954dd260"><con:settings/><con:config><script>import org.apache.poi.ss.usermodel.Cell
+import org.apache.poi.ss.usermodel.Row
+import org.apache.poi.xssf.usermodel.XSSFSheet
+import org.apache.poi.xssf.usermodel.XSSFWorkbook
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.ArrayList
+
+def SuitNameTarget = testRunner.testCase.testSuite.project.testSuites["Test Suite 1"].getName()
+def SuitNameTarget1 = testRunner.testCase.testSuite.project.testSuites["Test Suite 1"]
+for( tc in SuitNameTarget1.getTestCaseList()) {
+	disabled = tc.isDisabled()
+	if(disabled!=true){
+	def tcNameInReady = tc.getName()
+	log.info"   this it the value of TC in Ready = "+tcNameInReady
+	ArrayList&lt;String> array = new ArrayList&lt;String>();
+	FileInputStream fis = new FileInputStream("D:\\MyFile_1.xlsx")	
+	XSSFWorkbook workbook =new XSSFWorkbook(fis);
+	//int sheets =workbook.getNumberOfSheets();
+	XSSFSheet sheet = workbook.getSheet("ANF-Test123");
+		Iterator&lt;Row> rowIterator = sheet.iterator();
+		int coloumn =0;
+			log.info "Hi"
+			while(rowIterator.hasNext()){
+				Row row =rowIterator.next();
+				if(row.getCell(coloumn).getStringCellValue().equalsIgnoreCase(tcNameInReady)){
+					log.info "         this is the coloumn   "+ coloumn +"   Value of the cell    "+row.getCell(coloumn).getStringCellValue()
+					Iterator&lt;Cell> cellIterator =row.cellIterator();
+					while(cellIterator.hasNext()){
+						Cell cell =cellIterator.next();
+						def test = cell.getStringCellValue()
+						array.add(cell.getStringCellValue()).toString()						
+					}
+					def Desp0 = array[0]
+					def Desp1 = array[1]
+					def Desp2 = array[2]
+					def Desp3 = array[3]
+					def Desp4 = array[4]
+					log.info Desp0+"\n"+Desp1+"\n"+Desp2+"\n"+Desp3+"\n"+Desp4
+					tc.setDescription("=====TCName======  \n"+Desp0+"\n"+"=====Beschreibung======  \n"+Desp1+"\n"
+							 +"=====fachlische Content======  \n"+Desp2+"\n"+"=====technische Content======  \n"+Desp3+"\n"+"=====Kommentar======  \n"+Desp4)						
+				}  
+			}
+	}
+}</script></con:config></con:testStep><con:testStep type="groovy" name="Copy of ReadExcelWriteToDescription" id="dbb2f18f-a7a0-4bf1-9568-995f28dd8587"><con:settings/><con:config><script>import org.apache.poi.ss.usermodel.Cell
+import org.apache.poi.ss.usermodel.Row
+import org.apache.poi.xssf.usermodel.XSSFSheet
+import org.apache.poi.xssf.usermodel.XSSFWorkbook
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.ArrayList
+
+def SuitNameTarget = testRunner.testCase.testSuite.project.testSuites["Test Suite 1"].getName()
+def SuitNameTarget1 = testRunner.testCase.testSuite.project.testSuites["Test Suite 1"]
+for( tc in SuitNameTarget1.getTestCaseList()) {
+	def tcNameInReady = tc.getName()
+	
+	ArrayList&lt;String> array = new ArrayList&lt;String>();
+	FileInputStream fis = new FileInputStream("D:\\MyFile_1.xlsx")
+	/*FileOutputStream fisout = new FileOutputStream("D:\\MyText.txt")
+	OutputStreamWriter fileout = new OutputStreamWriter(fisout)
+	BufferedWriter writer = new BufferedWriter(fileout)*/
+	
+	XSSFWorkbook workbook =new XSSFWorkbook(fis);
+	int sheets =workbook.getNumberOfSheets();
+	XSSFSheet sheet = workbook.getSheet("ANF-Test123");
+		Iterator&lt;Row> row = sheet.iterator();
+		Row firstRow =row.next();
+		Iterator&lt;Cell> cell =firstRow.cellIterator();
+		int k=0;
+		int coloumn =0;
+			while(cell.hasNext()){
+				Cell value =cell.next();
+				if(value.getStringCellValue().equalsIgnoreCase(tcNameInReady)){
+					coloumn =k;
+				}
+					k++;
+			}
+			while(row.hasNext()){
+				Row r =row.next();
+				if(r.getCell(coloumn).getStringCellValue().equalsIgnoreCase(tcNameInReady)){
+					Iterator&lt;Cell> cy =r.cellIterator();
+					while(cy.hasNext()){
+						Cell c =cy.next();
+						def test = c.getStringCellValue()
+						array.add(c.getStringCellValue()).toString()						
+						//writer.write(c.getStringCellValue()+'\n\r')
+					}
+					def Desp0 = array[0]
+					def Desp1 = array[1]
+					def Desp2 = array[2]
+					def Desp3 = array[3]
+					def Desp4 = array[4]
+					log.info Desp0+"\n"+Desp1+"\n"+Desp2+"\n"+Desp3+"\n"+Desp4
+					tc.setDescription("=====TCName======  \n"+Desp0+"\n"+"=====Beschreibung======  \n"+Desp1+"\n"
+							 +"=====fachlische Content======  \n"+Desp2+"\n"+"=====technische Content======  \n"+Desp3+"\n"+"=====Kommentar======  \n"+Desp4)						
+				}  
+			}
+			//writer.flush()
+}</script></con:config></con:testStep><con:testStep type="groovy" name="SettingProperty" id="071a63e6-019d-4bbd-a141-7adf22df7d38"><con:settings/><con:config><script>def teSuite1= testRunner.testCase.testSuite.project.Workspace.getProjectByName("Project 1").testSuties["Test Suite 1"]
+log.info teSuite1</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:requirements/>
+  <con:properties>
+    <con:property>
+      <con:name>a</con:name>
+      <con:value>7</con:value>
+    </con:property>
+    <con:property>
+      <con:name>b</con:name>
+      <con:value>13</con:value>
+    </con:property>
+  </con:properties>
+  <con:wssContainer/>
+  <con:databaseConnectionContainer>
+    <con:databaseConnection>
+      <con:name>MyDB</con:name>
+      <con:driver>oracle.jdbc.driver.OracleDriver</con:driver>
+      <con:connectionString>jdbc:oracle:thin:system/PASS_VALUE@127.0.0.1:1521:orcl</con:connectionString>
+      <con:password>Mina2021Minoo</con:password>
+      <con:connectionProperties/>
+    </con:databaseConnection>
+  </con:databaseConnectionContainer>
+  <con:jmsConnectionContainer/>
+  <con:oAuth2ProfileContainer/>
+  <con:oAuth1ProfileContainer/>
+  <con:reporting>
+    <con:reportTemplates/>
+    <con:xmlTemplates/>
+    <con:xmlTemplates/>
+    <con:parameters/>
+    <con:parameters/>
+  </con:reporting>
+  <con:reporting/>
+  <con:eventHandlers type="RequestFilter.filterRequest" name="RequestFilter.filterRequest">
+    <con:script>// Sample event script to add custom HTTP header to all outgoing REST, SOAP and HTTP(S) calls
+// This code is often used for adding custom authentication to ReadyAPI functional tests
+
+// If hardcoding the token, uncomment and change line 5
+// token = '4567'
+
+// If your token is parameterized in Project level custom property, uncomment line 8
+// token = request.parent.testCase.testSuite.project.getProperty('auth_token').getValue()
+
+// To modify all outgoing calls, remove comments from lines 11 to 16
+// headers = request.requestHeaders
+// if (headers.containsKey('auth_token2') == false) {
+//   headers.put('auth_token2', token)
+//   request.requestHeaders = headers
+// }</con:script>
+  </con:eventHandlers>
+  <con:eventHandlers type="TestRunListener.afterStep" name="TestRunListener.afterStep">
+    <con:script>// Save all test step results into files
+// Change the directory path in line 5 to a location where you want to store details
+// then uncomment lines 5 to 10
+
+// filePath = 'C:\\tempOutputDirectory\\'
+// fos = new java.io.FileOutputStream(filePath + testStepResult.testStep.label + '.txt', true)
+// pw = new java.io.PrintWriter(fos)
+// testStepResult.writeTo(pw)
+// pw.close()
+// fos.close()</con:script>
+  </con:eventHandlers>
+  <con:environment id="771c59b9-fbfd-4070-8a11-6a34fab70340" name="Test" index="0">
+    <con:service type="SOAP" name="CalculatorSoap">
+      <con:endpoint authProfile="No Authorization" wssType="" wssTimeToLive="" outgoingWss="" incomingWss="" proxyHost="" proxyPort="" proxyUsername="" proxyPassword="">http://www.dneonline.com/calculator.asmx</con:endpoint>
+    </con:service>
+    <con:property>
+      <con:name>a</con:name>
+      <con:value>saeed</con:value>
+    </con:property>
+    <con:property>
+      <con:name>b</con:name>
+      <con:value>44</con:value>
+    </con:property>
+    <con:databaseConnectionContainer>
+      <con:databaseConnection>
+        <con:name>MyDB</con:name>
+        <con:driver>oracle.jdbc.driver.OracleDriver</con:driver>
+        <con:connectionString>jdbc:oracle:thin:system/PASS_VALUE@127.0.0.1:1521:orcl</con:connectionString>
+        <con:password>Mina2021Minoo</con:password>
+        <con:connectionProperties/>
+      </con:databaseConnection>
+    </con:databaseConnectionContainer>
+    <con:jmsConnectionContainer/>
+  </con:environment>
+  <con:authRepository/>
+  <con:environmentSpec>
+    <con:entry environmentId="771c59b9-fbfd-4070-8a11-6a34fab70340">
+      <con:authProfile>No Authorization</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+  <con:tags/>
+</con:soapui-project>
